@@ -3,19 +3,19 @@ package com.company;
 /**
  * Created by RENT on 2017-05-26.
  */
-public class Node {
+public class Node <dataType> {
     private Node next;
-    private String data;
+    private dataType data;
 
-    public Node(String data) {
+    public Node(dataType data) {
         this.data = data;
     }
 
-    public String getData() {
+    public dataType getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(dataType data) {
         this.data = data;
     }
 

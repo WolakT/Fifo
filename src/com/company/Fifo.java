@@ -3,11 +3,11 @@ package com.company;
 /**
  * Created by RENT on 2017-05-26.
  */
-public class Fifo {
+public class Fifo <dataType>{
     private Node tempLast;
     private Node tempFirst;
 
-    public void push (String data){
+    public void push (dataType data){
        if(tempLast == null){
            tempLast = new Node(data);
            tempFirst = tempLast;
