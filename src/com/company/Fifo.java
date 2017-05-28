@@ -14,7 +14,8 @@ public class Fifo {
 
        } else {
            Node newNode = new Node(data);
-           newNode.setNext(tempLast);
+           tempLast.setNext(newNode);
+           ///newNode.setNext(tempLast);
            tempLast = newNode;
        }
 
@@ -22,8 +23,8 @@ public class Fifo {
     }
     public void pop(){
         //tempLast print
-        System.out.println(tempLast.getData());
-        tempLast = tempLast.getNext();
+        System.out.println(tempFirst.getData());
+        tempFirst = tempFirst.getNext();
     }
 
 }

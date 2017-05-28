@@ -1,0 +1,16 @@
+
+
+
+FIFO
+first in firs out - Queue
+need to have first item so that we know which to remove
+Node newNode = New Node(data);
+lastNode.setNext (newNode);
+lastNode = newNode;
+
+LIFO
+last in first out - Stack
+
+Node newNode = New Node(data);
+newNode.setNext = lastNode;
+lastNode = newNode;
